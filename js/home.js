@@ -21,5 +21,5 @@ title.innerHTML = `Hello ${currentUser.name}`;
 logoutBtn.addEventListener('click', function(){
     localStorage.removeItem('currentUser');
     currentUser = {};
-    window.location = '../index.html';
+    window.location = './index.html';
 })
