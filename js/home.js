@@ -11,7 +11,7 @@ if(localStorage.getItem('users') !== null){
 if(localStorage.getItem('currentUser') !== null){
     currentUser = JSON.parse(localStorage.getItem('currentUser'));
 }else{
-    window.location = '../index.html';
+    window.location = './index.html';
 }
 
 
