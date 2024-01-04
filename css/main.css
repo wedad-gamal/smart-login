@@ -1,0 +1,70 @@
+:root{
+    --main-color:#24353f;
+    --secandary-color:#17A2B8;
+    --dimmed-color:#efededaa;
+    --font-family: 'Titillium Web', sans-serif;
+
+}
+
+body{
+    background-color: var(--main-color);
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;   
+}
+
+h1{
+    color: var(--secandary-color);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.box{
+    width: 55%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
+}
+
+input{
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+}
+.input-box{
+    width: 100%;
+    background-color: var(--main-color);  
+    
+    outline: 1px solid #27abbef5;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-block: 10px;
+    font-size: 18px;
+}
+
+::placeholder{
+    color: var(--dimmed-color);    
+}
+input{
+    outline: none;
+    width: 100%;
+    color: var(--dimmed-color);
+
+}
+.input-box:focus-within{
+    outline: 1px solid #fff;
+}
+
+.btn, .btn:hover{
+    outline: var(--secandary-color);   
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: var(--secandary-color);    
+}
+
+.input-box i{
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+      <div class="box m-auto my-5 p-5 text-center">
+        <h1>Smart Login System</h1>
+        <div class="d-flex input-box">
+          <i class="fa-regular fa-user p-2"></i
+          ><input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="d-flex input-box">
+          <i class="fa-regular fa-envelope p-2"></i
+          ><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="d-flex input-box">
+          <i class="fa-solid fa-lock p-2"></i
+          ><input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+          /><i id="hidePassword" class="fa-solid fa-eye-slash p-2 d-none"></i
+          ><i id="showPassword" class="fa-solid fa-eye p-2"></i>
+        </div>
+        <p class="text-danger text-center" id="errorMessage"></p>
+        <p class="text-success text-center" id="successMessage"></p>
+        <button class="btn btn-outline-info w-100 my-3">Sign Up</button>
+        <p>
+          You have an account?
+          <a
+            href="index.html"
+            class="link-underline link-underline-opacity-0 text-light"
+            >Signin</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
